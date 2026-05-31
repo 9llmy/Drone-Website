@@ -1,0 +1,301 @@
+<!--
+  ════════════════════════════════════════════════════════════════════
+  سليمان الغفيلي — موقع التصوير الجوي والمونتاج
+  Sulaiman Alghofaili — Aerial Cinematography & Video Editing
+  ════════════════════════════════════════════════════════════════════
+  هيكل المشروع / Project structure:
+    index.html        ← هذا الملف: المحتوى فقط (لا داعي لتعديله غالباً)
+    css/styles.css    ← كل التصميم والألوان
+    js/config.js   ★  ← هنا تعدّل: الفيديوهات + لينكدإن + مجلد درايف
+    js/main.js        ← المنطق البرمجي (لا حاجة لتعديله)
+
+  ▶ للتعديل على أعمالك أو الروابط، افتح فقط:  js/config.js
+  ════════════════════════════════════════════════════════════════════
+-->
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>سليمان الغفيلي — التصوير الجوي والمونتاج | Aerial Cinematography</title>
+<meta name="description" content="تصوير جوي احترافي بالدرون ومونتاج فيديو — معتمد من الهيئة العامة للطيران المدني GACA. العقار، البناء، الفعاليات، والتسويق.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400;500;600;700&family=Tajawal:wght@300;400;500;700;800&family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- ─────────── NAV ─────────── -->
+<header id="hdr">
+  <div class="wrap nav">
+    <a href="#top" class="brand">
+      <div class="logo">س</div>
+      <div>
+        <b data-ar="سليمان الغفيلي" data-en="Sulaiman Alghofaili">سليمان الغفيلي</b>
+        <span data-ar="التصوير الجوي · المونتاج" data-en="Aerial · Editing">التصوير الجوي · المونتاج</span>
+      </div>
+    </a>
+    <nav class="nav-links">
+      <a href="#about" data-ar="من أنا" data-en="About">من أنا</a>
+      <a href="#work" data-ar="الأعمال" data-en="Work">الأعمال</a>
+      <a href="#services" data-ar="الخدمات" data-en="Services">الخدمات</a>
+      <a href="#packages" data-ar="الباقات" data-en="Packages">الباقات</a>
+      <a href="#contact" data-ar="تواصل" data-en="Contact">تواصل</a>
+    </nav>
+    <div class="nav-right">
+      <button class="lang-btn" id="langBtn">EN</button>
+      <a class="btn btn-gold" id="navCta" target="_blank" rel="noopener"><span data-ar="احجز الآن" data-en="Book Now">احجز الآن</span></a>
+    </div>
+  </div>
+</header>
+
+<!-- ─────────── HERO ─────────── -->
+<section class="hero" id="top">
+  <div class="hero-bg">
+    <div class="grid-lines"></div>
+    <div class="glow g1"></div>
+    <div class="glow g2"></div>
+    <div class="horizon"></div>
+  </div>
+  <div class="wrap hero-inner">
+    <div class="hero-copy">
+      <span class="eyebrow" data-ar="مصوّر جوي معتمد من الطيران المدني GACA" data-en="GACA-Certified Remote Pilot">مصوّر جوي معتمد من الطيران المدني GACA</span>
+      <h1 data-ar="قوة التصوير الجوي <em>لمشاريعك</em>" data-en="The Power of Aerial <em>Cinematography</em>"></h1>
+      <p class="lead" data-ar="التصوير الجوي ليس مجرد لقطات مبهرة — بل عنصر أساسي في العقار والبناء والفعاليات والتسويق. التقط مشاريعك من زوايا خلّابة، واعرض مراحل التقدّم، وأبهِر عملاءك بصور وفيديوهات مميزة." data-en="Aerial footage isn't just stunning shots — it's an essential element for real estate, construction, events, and marketing. Capture your projects from breathtaking angles and impress your clients with premium video.">التصوير الجوي ليس مجرد لقطات مبهرة — بل عنصر أساسي في العقار والبناء والفعاليات والتسويق. التقط مشاريعك من زوايا خلّابة، واعرض مراحل التقدّم، وأبهِر عملاءك بصور وفيديوهات مميزة.</p>
+      <div class="hero-cta">
+        <a href="#work" class="btn btn-gold"><span data-ar="شاهد الأعمال" data-en="View Work">شاهد الأعمال</span></a>
+        <a class="btn btn-ghost" id="heroWa" target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.523 5.26l-.999 3.648 3.965-1.042z"/></svg>
+          <span data-ar="واتساب" data-en="WhatsApp">واتساب</span>
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><b class="num">+7</b><span data-ar="سنوات خبرة" data-en="Years experience">سنوات خبرة</span></div>
+        <div class="stat"><b class="num">24h</b><span data-ar="تسليم سريع" data-en="Fast delivery">تسليم سريع</span></div>
+        <div class="stat"><b class="num">4K</b><span data-ar="جودة سينمائية" data-en="Cinematic quality">جودة سينمائية</span></div>
+        <div class="stat"><b>GACA</b><span data-ar="مرخّص رسمياً" data-en="Officially licensed">مرخّص رسمياً</span></div>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="float-chip chip-1"><span class="chip-ic">★</span><span data-ar="أفقي وعمودي" data-en="H & Vertical">أفقي وعمودي</span></div>
+      <div class="float-chip chip-2"><span class="chip-ic">✓</span><span data-ar="مونتاج احترافي" data-en="Pro editing">مونتاج احترافي</span></div>
+      <div class="drone-card">
+        <div class="sky"></div>
+        <div class="sun"></div>
+        <div class="land"></div>
+        <svg class="drone-svg" viewBox="0 0 220 120" xmlns="http://www.w3.org/2000/svg">
+          <g stroke="#cfd8e6" stroke-width="3" fill="none" opacity=".95">
+            <line x1="60" y1="58" x2="22" y2="34"/><line x1="160" y1="58" x2="198" y2="34"/>
+            <line x1="60" y1="66" x2="22" y2="88"/><line x1="160" y1="66" x2="198" y2="88"/>
+          </g>
+          <ellipse cx="22" cy="30" rx="32" ry="5" fill="#9fb0c6" opacity=".55"/>
+          <ellipse cx="198" cy="30" rx="32" ry="5" fill="#9fb0c6" opacity=".55"/>
+          <ellipse cx="22" cy="92" rx="32" ry="5" fill="#9fb0c6" opacity=".55"/>
+          <ellipse cx="198" cy="92" rx="32" ry="5" fill="#9fb0c6" opacity=".55"/>
+          <rect x="78" y="48" width="64" height="30" rx="11" fill="#e9eef6"/>
+          <rect x="86" y="76" width="48" height="16" rx="7" fill="#c3cdda"/>
+          <circle cx="110" cy="92" r="7" fill="#1b2330" stroke="#e9b44c" stroke-width="2.5"/>
+          <rect x="95" y="50" width="9" height="5" rx="2.5" fill="#e8b44c"/>
+        </svg>
+        <div class="badge">
+          <div>
+            <div class="t" data-ar="DJI Mini 3 Pro" data-en="DJI Mini 3 Pro">DJI Mini 3 Pro</div>
+            <div class="s">KSA-259883 · 0.249kg</div>
+          </div>
+          <span class="rec"><i></i>REC 4K</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────── TRUST MARQUEE ─────────── -->
+<div class="trust">
+  <div class="marquee" id="marquee"></div>
+</div>
+
+<!-- ─────────── ABOUT ─────────── -->
+<section class="pad" id="about">
+  <div class="wrap about-grid">
+    <div class="reveal">
+      <span class="eyebrow" data-ar="لماذا تختارني" data-en="Why choose me">لماذا تختارني</span>
+      <h2 class="sec-title" data-ar="خبرة حقيقية خلف كل لقطة" data-en="Real expertise behind every shot">خبرة حقيقية خلف كل لقطة</h2>
+      <p class="sec-intro" data-ar="من التخطيط للطلعة حتى المونتاج النهائي — كل خطوة تُنفّذ باحترافية لتخرج مشاريعك بأبهى صورة." data-en="From flight planning to the final cut — every step is handled professionally so your projects look their absolute best.">من التخطيط للطلعة حتى المونتاج النهائي — كل خطوة تُنفّذ باحترافية لتخرج مشاريعك بأبهى صورة.</p>
+      <ul class="why-list">
+        <li><span class="ic">✈</span><div><b data-ar="أكثر من 7 سنوات خبرة" data-en="7+ years of experience">أكثر من 7 سنوات خبرة</b><p data-ar="في مجال التصوير الجوي بالدرون" data-en="In aerial drone photography">في مجال التصوير الجوي بالدرون</p></div></li>
+        <li><span class="ic">✂</span><div><b data-ar="خبير مونتاج" data-en="Editing expert">خبير مونتاج</b><p data-ar="باستخدام أحدث برامج المونتاج والتحرير" data-en="Using the latest editing software">باستخدام أحدث برامج المونتاج والتحرير</p></div></li>
+        <li><span class="ic">◆</span><div><b data-ar="دعم احترافي" data-en="Professional support">دعم احترافي</b><p data-ar="في كل خطوة من المشروع" data-en="At every step of the project">في كل خطوة من المشروع</p></div></li>
+        <li><span class="ic">₪</span><div><b data-ar="أسعار رمزية ومنافسة" data-en="Competitive pricing">أسعار رمزية ومنافسة</b><p data-ar="جودة عالية بسعر مناسب" data-en="High quality at the right price">جودة عالية بسعر مناسب</p></div></li>
+      </ul>
+    </div>
+
+    <div class="cert-cards reveal">
+      <div class="cert">
+        <span class="seal">★ GACA · الهيئة العامة للطيران المدني</span>
+        <h3 data-ar="رخصة طيار عن بُعد" data-en="Remote Pilot Certificate">رخصة طيار عن بُعد</h3>
+        <p data-ar="الفئة العامة — Open Category 107" data-en="Open Category — 107">الفئة العامة — Open Category 107</p>
+        <div class="row">
+          <div><span data-ar="رقم الرخصة" data-en="Certificate No.">رقم الرخصة</span><b>RPC-O-19237</b></div>
+          <div><span data-ar="الحالة" data-en="Status">الحالة</span><b style="color:var(--gold)" data-ar="سارية ✓" data-en="Valid ✓">سارية ✓</b></div>
+        </div>
+      </div>
+      <div class="cert">
+        <span class="seal">★ GACA · تسجيل الطائرة</span>
+        <h3 data-ar="طائرة مسجّلة رسمياً" data-en="Officially Registered Drone">طائرة مسجّلة رسمياً</h3>
+        <p data-ar="DJI Mini 3 Pro — مصرّح بالتشغيل" data-en="DJI Mini 3 Pro — cleared to operate">DJI Mini 3 Pro — مصرّح بالتشغيل</p>
+        <div class="row">
+          <div><span data-ar="علامة التسجيل" data-en="Registration mark">علامة التسجيل</span><b>KSA-259883</b></div>
+          <div><span data-ar="الوزن الأقصى" data-en="Max take-off">الوزن الأقصى</span><b>0.249 kg</b></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────── WORK / PORTFOLIO ─────────── -->
+<section class="pad" id="work">
+  <div class="wrap">
+    <div class="work-head reveal">
+      <div>
+        <span class="eyebrow" data-ar="معرض الأعمال" data-en="Portfolio">معرض الأعمال</span>
+        <h2 class="sec-title" data-ar="أعمالي" data-en="My Work">أعمالي</h2>
+        <p class="sec-intro" data-ar="فيديوهات أفقية وعمودية — تصوير جوي بالدرون وتصوير أرضي. اضغط على أي عمل لمشاهدته." data-en="Horizontal & vertical videos — aerial drone and ground footage. Click any piece to play.">فيديوهات أفقية وعمودية — تصوير جوي بالدرون وتصوير أرضي. اضغط على أي عمل لمشاهدته.</p>
+      </div>
+      <div class="filters" id="filters">
+        <button class="filter active" data-f="all" data-ar="الكل" data-en="All">الكل</button>
+        <button class="filter" data-f="drone" data-ar="تصوير جوي" data-en="Aerial">تصوير جوي</button>
+        <button class="filter" data-f="ground" data-ar="تصوير أرضي" data-en="Ground">تصوير أرضي</button>
+        <button class="filter" data-f="v" data-ar="فيديو عمودي" data-en="Vertical">فيديو عمودي</button>
+      </div>
+    </div>
+    <div class="gallery" id="gallery"></div>
+  </div>
+</section>
+
+<!-- ─────────── SERVICES / PRICES ─────────── -->
+<section class="pad" id="services" style="background:var(--bg-2); border-block:1px solid var(--line);">
+  <div class="wrap">
+    <div class="reveal" style="text-align:center; margin-bottom:46px;">
+      <span class="eyebrow" data-ar="قائمة الأسعار" data-en="Price list">قائمة الأسعار</span>
+      <h2 class="sec-title" data-ar="خدمات مرنة تناسب مشروعك" data-en="Flexible services for your project">خدمات مرنة تناسب مشروعك</h2>
+    </div>
+    <div class="price-wrap reveal">
+      <div class="price-block">
+        <h3><span class="dot"></span><span data-ar="الخدمات الأساسية" data-en="Core services">الخدمات الأساسية</span></h3>
+        <div class="price-row"><div class="name"><b data-ar="تصوير لمرة واحدة بالدرون" data-en="Single drone shoot">تصوير لمرة واحدة بالدرون</b><span data-ar="البطارية لكل رحلة: 30 دقيقة" data-en="Battery per flight: 30 min">البطارية لكل رحلة: 30 دقيقة</span></div><div class="amt num">200<small>SAR</small></div></div>
+        <div class="price-row"><div class="name"><b data-ar="المونتاج (تحرير الفيديو)" data-en="Montage (video editing)">المونتاج (تحرير الفيديو)</b></div><div class="amt num">150<small>SAR</small></div></div>
+        <div class="price-row"><div class="name"><b data-ar="تصوير أرضي" data-en="Ground photography">تصوير أرضي</b></div><div class="amt num">100<small>SAR</small></div></div>
+      </div>
+      <div class="price-block">
+        <h3><span class="dot"></span><span data-ar="الإضافات" data-en="Add-ons">الإضافات</span></h3>
+        <div class="price-row"><div class="name"><b data-ar="إضافة شعار / لوجو العميل" data-en="Add client logo / branding">إضافة شعار / لوجو العميل</b></div><div class="amt num">50<small>SAR</small></div></div>
+        <div class="price-row"><div class="name"><b data-ar="إضافة تعليق صوتي AI" data-en="AI voice-over">إضافة تعليق صوتي AI</b></div><div class="amt num">100<small>SAR</small></div></div>
+        <div class="price-row"><div class="name"><b data-ar="التسليم السريع خلال 24 ساعة" data-en="Express 24h delivery">التسليم السريع خلال 24 ساعة</b><span data-ar="مقابل رسوم إضافية" data-en="Additional fee applies">مقابل رسوم إضافية</span></div><div class="amt num" data-ar="+رسوم" data-en="+Fee">+رسوم</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────── PACKAGES ─────────── -->
+<section class="pad" id="packages">
+  <div class="wrap">
+    <div class="reveal" style="text-align:center; margin-bottom:54px;">
+      <span class="eyebrow" data-ar="باقات وبكجات خاصة" data-en="Special packages">باقات وبكجات خاصة</span>
+      <h2 class="sec-title" data-ar="اختر الباقة المناسبة لك" data-en="Choose the right package">اختر الباقة المناسبة لك</h2>
+    </div>
+    <div class="pkgs reveal">
+      <!-- BASIC -->
+      <div class="pkg">
+        <h3 data-ar="الباقة الأساسية" data-en="Basic Package">الباقة الأساسية</h3>
+        <div class="price"><b class="num">450</b><span>SAR</span></div>
+        <ul class="feats">
+          <li class="on"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#E8B44C" stroke-width="2.6"><path d="M20 6L9 17l-5-5"/></svg><span data-ar="طلعتان بالدرون" data-en="2 drone flights">طلعتان بالدرون</span></li>
+          <li class="on"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#E8B44C" stroke-width="2.6"><path d="M20 6L9 17l-5-5"/></svg><span data-ar="تعديل مجاني للفيديو النهائي" data-en="1 free final edit">تعديل مجاني للفيديو النهائي</span></li>
+          <li class="on"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#E8B44C" stroke-width="2.6"><path d="M20 6L9 17l-5-5"/></svg><span data-ar="التصوير الأرضي مشمول" data-en="Ground photography included">التصوير الأرضي مشمول</span></li>
+          <li class="on"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#E8B44C" stroke-width="2.6"><path d="M20 6L9 17l-5-5"/></svg><span data-ar="يشمل المونتاج" data-en="Montage included">يشمل المونتاج</span></li>
+        </ul>
+        <a class="btn btn-ghost pkg-cta" data-pkg="الباقة الأساسية" target="_blank" rel="noopener"><span data-ar="اطلب الباقة" data-en="Order package">اطلب الباقة</span></a>
+      </div>
+      <!-- DISTINGUISHED (featured) -->
+      <div class="pkg featured">
+        <span class="tier-flag" data-ar="★ الأكثر طلباً" data-en="★ Most popular">★ الأكثر طلباً</span>
+        <h3 data-ar="باقة التميّز" data-en="Distinguished Package">باقة التميّز</h3>
+        <div class="price"><b class="num">650</b><span>SAR</span></div>
+        <ul class="feats">
+          <li class="on"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#E8B44C" stroke-width="2.6"><path d="M20 6L9 17l-5-5"/></svg><span data-ar="3 طلعات بالدرون" data-en="3 drone flights">3 طلعات بالدرون</span></li>
+          <li class="on"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#E8B44C" stroke-width="2.6"><path d="M20 6L9 17l-5-5"/></svg><span data-ar="تعديلان مجاناً للفيديو النهائي" data-en="2 free final edits">تعديلان مجاناً للفيديو النهائي</span></li>
+          <li class="on"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#E8B44C" stroke-width="2.6"><path d="M20 6L9 17l-5-5"/></svg><span data-ar="يشمل المونتاج" data-en="Montage included">يشمل المونتاج</span></li>
+          <li class="on"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#E8B44C" stroke-width="2.6"><path d="M20 6L9 17l-5-5"/></svg><span data-ar="التصوير الأرضي مشمول" data-en="Ground photography included">التصوير الأرضي مشمول</span></li>
+          <li class="on"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#E8B44C" stroke-width="2.6"><path d="M20 6L9 17l-5-5"/></svg><span data-ar="يشمل شعار / هوية العميل" data-en="Client logo / branding included">يشمل شعار / هوية العميل</span></li>
+        </ul>
+        <a class="btn btn-gold pkg-cta" data-pkg="باقة التميّز" target="_blank" rel="noopener"><span data-ar="اطلب الباقة" data-en="Order package">اطلب الباقة</span></a>
+      </div>
+      <!-- PREMIUM -->
+      <div class="pkg">
+        <h3 data-ar="باقة البريميوم" data-en="Premium Package">باقة البريميوم</h3>
+        <div class="price"><b class="num">950</b><span>SAR</span></div>
+        <ul class="feats">
+          <li class="on"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#E8B44C" stroke-width="2.6"><path d="M20 6L9 17l-5-5"/></svg><span data-ar="4 طلعات بالدرون" data-en="4 drone flights">4 طلعات بالدرون</span></li>
+          <li class="on"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#E8B44C" stroke-width="2.6"><path d="M20 6L9 17l-5-5"/></svg><span data-ar="3 تعديلات مجانية للفيديو النهائي" data-en="3 free final edits">3 تعديلات مجانية للفيديو النهائي</span></li>
+          <li class="on"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#E8B44C" stroke-width="2.6"><path d="M20 6L9 17l-5-5"/></svg><span data-ar="شامل المونتاج" data-en="Montage included">شامل المونتاج</span></li>
+          <li class="on"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#E8B44C" stroke-width="2.6"><path d="M20 6L9 17l-5-5"/></svg><span data-ar="شامل التعليق الصوتي بالـ AI" data-en="AI voice-over included">شامل التعليق الصوتي بالـ AI</span></li>
+          <li class="on"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#E8B44C" stroke-width="2.6"><path d="M20 6L9 17l-5-5"/></svg><span data-ar="التصوير الأرضي مشمول" data-en="Ground photography included">التصوير الأرضي مشمول</span></li>
+          <li class="on"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#E8B44C" stroke-width="2.6"><path d="M20 6L9 17l-5-5"/></svg><span data-ar="يشمل شعار / هوية العميل" data-en="Client logo / branding included">يشمل شعار / هوية العميل</span></li>
+        </ul>
+        <a class="btn btn-ghost pkg-cta" data-pkg="باقة البريميوم" target="_blank" rel="noopener"><span data-ar="اطلب الباقة" data-en="Order package">اطلب الباقة</span></a>
+      </div>
+    </div>
+
+    <div class="notes reveal">
+      <div class="note"><span class="n">1</span><span data-ar="قد يختلف السعر حسب موقع التصوير ووقته." data-en="Price may vary by shoot location and time.">قد يختلف السعر حسب موقع التصوير ووقته.</span></div>
+      <div class="note"><span class="n">2</span><span data-ar="المصوّر غير مسؤول عن المرافق أو الأشخاص في الصور أو مقاطع الفيديو." data-en="The photographer is not responsible for facilities or people appearing in the footage.">المصوّر غير مسؤول عن المرافق أو الأشخاص في الصور أو مقاطع الفيديو.</span></div>
+      <div class="note"><span class="n">3</span><span data-ar="العميل يتحمل المسؤولية كاملة في إبلاغهم قبل التصوير." data-en="The client is fully responsible for notifying them before the shoot.">العميل يتحمل المسؤولية كاملة في إبلاغهم قبل التصوير.</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────── CONTACT ─────────── -->
+<section class="pad contact" id="contact">
+  <div class="wrap">
+    <div class="contact-card reveal">
+      <div class="contact-grid">
+        <div>
+          <span class="eyebrow" data-ar="جاهز نبدأ؟" data-en="Ready to start?">جاهز نبدأ؟</span>
+          <h2 data-ar="خلّ مشروعك يطير عالياً" data-en="Let your project take flight">خلّ مشروعك يطير عالياً</h2>
+          <p data-ar="تواصل معي عبر واتساب وأخبرني عن مشروعك — وأرسل لك عرضاً يناسب احتياجك خلال وقت قصير." data-en="Message me on WhatsApp and tell me about your project — I'll send you a tailored quote shortly.">تواصل معي عبر واتساب وأخبرني عن مشروعك — وأرسل لك عرضاً يناسب احتياجك خلال وقت قصير.</p>
+          <div class="contact-meta">
+            <div><span data-ar="واتساب فقط" data-en="WhatsApp only">واتساب فقط</span><b dir="ltr">0569229533</b></div>
+            <div><span data-ar="الموقع" data-en="Location">الموقع</span><b data-ar="الرس، القصيم، السعودية" data-en="Ar Rass, Qassim, KSA">الرس، القصيم، السعودية</b></div>
+          </div>
+        </div>
+        <div class="contact-actions">
+          <a class="btn btn-wa" id="waMain" target="_blank" rel="noopener">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.523 5.26l-.999 3.648 3.965-1.042z"/></svg>
+            <span data-ar="تواصل عبر واتساب" data-en="Chat on WhatsApp">تواصل عبر واتساب</span>
+          </a>
+          <a class="btn btn-li" id="liMain" target="_blank" rel="noopener">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            <span data-ar="حسابي على LinkedIn" data-en="View my LinkedIn">حسابي على LinkedIn</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot">
+    <div class="brand">
+      <div class="logo">س</div>
+      <div><b data-ar="سليمان الغفيلي" data-en="Sulaiman Alghofaili">سليمان الغفيلي</b><span data-ar="التصوير الجوي · المونتاج" data-en="Aerial · Editing">التصوير الجوي · المونتاج</span></div>
+    </div>
+    <p data-ar="© 2026 سليمان الغفيلي — جميع الحقوق محفوظة · معتمد من GACA" data-en="© 2026 Sulaiman Alghofaili — All rights reserved · GACA Certified">© 2026 سليمان الغفيلي — جميع الحقوق محفوظة · معتمد من GACA</p>
+  </div>
+</footer>
+
+<script src="js/config.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
