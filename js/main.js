@@ -92,27 +92,26 @@ function guessType(name){
   return /drone|جوي|aerial|fly|air|سماء|طيار/i.test(name||'') ? 'drone' : 'ground';
 }
 
-// Auto-load every video inside one public Google Drive folder
+// Auto-load videos via our own serverless function (/api/videos).
+// The Google API key stays SECRET on the server (Vercel env var) —
+// it is never sent to the browser and never committed to GitHub.
 async function loadDriveFolder(){
-  const q = encodeURIComponent(`'${DRIVE_FOLDER}' in parents and mimeType contains 'video/' and trashed=false`);
-  const fields = encodeURIComponent('files(id,name,videoMediaMetadata(width,height))');
-  const url = `https://www.googleapis.com/drive/v3/files?q=${q}&key=${DRIVE_API_KEY}&fields=${fields}&pageSize=100&orderBy=name`;
-  const res = await fetch(url);
-  if(!res.ok) throw new Error('Drive API error ' + res.status);
+  const res = await fetch('/api/videos');
+  if(!res.ok) throw new Error('api error ' + res.status);
   const data = await res.json();
   const files = data.files || [];
   if(!files.length) throw new Error('no videos found');
-  return files.map(f=>{
-    const m = f.videoMediaMetadata || {};
-    const vertical = m.height && m.width ? m.height > m.width : false;
-    const clean = (f.name||'').replace(/\.[^.]+$/,'');
-    return { type:guessType(f.name), orientation: vertical?'v':'h', title:clean, titleEn:clean, drive:f.id, yt:'', mp4:'' };
-  });
+  return files.map(f=>({
+    type: guessType(f.name),
+    orientation: f.orientation || 'h',
+    title: f.name, titleEn: f.name,
+    drive: f.id, yt:'', mp4:''
+  }));
 }
 
-// choose source: Drive folder if configured, else manual WORKS
-if(DRIVE_FOLDER && DRIVE_API_KEY){
-  renderWorks(WORKS); // show fallback instantly while Drive loads
+// choose source: secure Drive function if enabled, else manual WORKS
+if(typeof USE_DRIVE_API !== 'undefined' && USE_DRIVE_API){
+  renderWorks(WORKS); // show fallback instantly while videos load
   loadDriveFolder()
     .then(driveWorks => renderWorks(driveWorks))
     .catch(err => { console.warn('Drive load failed, using manual list:', err); renderWorks(WORKS); });

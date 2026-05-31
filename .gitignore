@@ -1,6 +1,81 @@
-# OS / editor junk
+# ───────────────────────────────────────────────
+#  .gitignore — static website (HTML / CSS / JS)
+# ───────────────────────────────────────────────
+
+# ── Secrets & environment ──────────────────────
+# Never commit credentials, keys, or env files.
+.env
+.env.*
+*.local
+secrets.json
+*.pem
+*.key
+*.p12
+*-credentials.json
+service-account*.json
+gha-creds-*.json
+
+# ── OS junk ────────────────────────────────────
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
+Thumbs.db:encryptable
+Desktop.ini
+$RECYCLE.BIN/
+
+# ── Editors / IDEs ─────────────────────────────
 .vscode/
-*.log
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+*~
+*.sublime-project
+*.sublime-workspace
+.history/
+
+# ── Node / package managers ────────────────────
 node_modules/
+jspm_packages/
+.npm
+.pnp
+.pnp.js
+.yarn/
+.yarn-integrity
+package-lock.json.bak
+
+# ── Logs & debug ───────────────────────────────
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ── Build output / caches ──────────────────────
+dist/
+build/
+out/
+.cache/
+.parcel-cache/
+.tmp/
+tmp/
+.eslintcache
+*.tsbuildinfo
+
+# ── Coverage / tests ───────────────────────────
+coverage/
+.nyc_output/
+
+# ── Deploy tooling (Netlify / Vercel) ──────────
+.netlify/
+.vercel/
+
+# ── Misc ───────────────────────────────────────
+*.bak
+*.orig
+*.zip

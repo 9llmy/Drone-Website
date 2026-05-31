@@ -2,40 +2,45 @@
 Sulaiman Alghofaili — Aerial Cinematography Website
 =====================================================
 
-هيكل المشروع (الطريقة الاحترافية):
-  index.html        المحتوى فقط
-  css/styles.css    التصميم والألوان
-  js/config.js  ★   هنا تعدّل: الفيديوهات + لينكدإن + مجلد درايف
-  js/main.js        المنطق البرمجي (لا تعدّله)
+هيكل المشروع:
+  index.html        المحتوى
+  css/styles.css    التصميم
+  js/config.js  ★   إعداداتك: الأعمال + لينكدإن + تفعيل درايف
+  js/main.js        المنطق (لا تعدّله)
+  api/videos.js     دالة خادم آمنة تقرأ مجلد درايف (المفتاح يبقى سرّياً)
+  package.json      إعداد المشروع
 
-▶ كل تعديلاتك تكون في ملف واحد فقط:  js/config.js
+=====================================================
+🔒 الطريقة الآمنة (المفتاح لا يظهر في GitHub ولا المتصفح)
+=====================================================
+المفتاح يُحفظ في Vercel فقط كـ Environment Variable.
+الموقع ينادي /api/videos، والدالة تقرأ المجلد بالمفتاح السرّي.
 
-كيف تفتح المشروع:
-1. افتح المجلد في VS Code  (File > Open Folder).
-2. للمعاينة: يمين على index.html > Open with Live Server.
-   (مهم: استخدم Live Server وليس فتح الملف مباشرة،
-    لأن تحميل مجلد درايف يحتاج تشغيل عبر خادم محلي.)
+خطوات النشر على Vercel:
+1) ارفع المشروع على GitHub (بدون أي مفتاح — config.js نظيف).
+2) ادخل vercel.com > Add New > Project > اختر مستودع GitHub.
+3) اتركه على الإعدادات الافتراضية (Vercel يكتشف /api تلقائياً) > Deploy.
+4) بعد النشر:  Project > Settings > Environment Variables
+   أضف متغيّرين:
+     الاسم: DRIVE_API_KEY   القيمة: مفتاح Google السرّي
+     الاسم: DRIVE_FOLDER    القيمة: 1Gv9z8J4lFedzyP2YcRTDwQRGiFiTGZ-b
+   اختر البيئات (Production / Preview / Development) > Save.
+5) أعد النشر:  Deployments > آخر نشر > ⋯ > Redeploy
+   (لازم إعادة نشر حتى تُقرأ المتغيّرات الجديدة.)
 
------------------------------------------------------
-إضافة الفيديوهات — افتح js/config.js
------------------------------------------------------
-الطريقة (أ) تلقائياً من مجلد درايف (مُفضّلة):
-  - شارك المجلد: Anyone with the link (Viewer).
-  - معرّف المجلد من الرابط:
-      drive.google.com/drive/folders/THE_ID
-  - مفتاح API مجاني من console.cloud.google.com
-      (فعّل Google Drive API ثم أنشئ API key).
-  - ضع القيمتين في:
-      const DRIVE_FOLDER  = '';
-      const DRIVE_API_KEY = '';
+شروط قوقل درايف:
+- المجلد مشارَك: Anyone with the link (Viewer).
+- مفتاح Google من console.cloud.google.com مع تفعيل "Google Drive API".
 
-الطريقة (ب) يدوياً: عدّل القائمة  const WORKS = [
-  لكل فيديو استخدم:  drive  أو  yt  أو  mp4
+التجربة محلياً (VS Code):
+- دالة /api لا تعمل مع Live Server العادي، فستظهر القائمة اليدوية WORKS.
+- لتجربة الدالة محلياً:  npm i -g vercel  ثم  vercel dev
+- أو ببساطة جرّبها مباشرة بعد النشر على Vercel.
+
+=====================================================
+بدون درايف (طريقة بديلة):
+في js/config.js اجعل:  const USE_DRIVE_API = false;
+ثم عدّل القائمة WORKS يدوياً (روابط drive / yt / mp4).
 
 لينكدإن:  const LINKEDIN =
-واتساب:   0569229533  (مربوط بكل الأزرار)
-
------------------------------------------------------
-الربط مع GitHub من VS Code:
-  Source Control > Initialize Repository > Commit > Publish Branch.
-النشر المجاني:  GitHub Pages  أو  Netlify  أو  Vercel.
+واتساب:   0569229533

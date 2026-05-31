@@ -1,0 +1,7 @@
+{
+  "name": "sulaiman-drone-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Aerial cinematography & video editing portfolio — Sulaiman Alghofaili",
+  "engines": { "node": ">=18" }
+}
