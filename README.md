@@ -12,7 +12,7 @@
 [![Vercel](https://img.shields.io/badge/Deployed_on-Vercel-black?logo=vercel)](https://vercel.com)
 [![Google Drive](https://img.shields.io/badge/Google_Drive-API_v3-4285F4?logo=googledrive&logoColor=white)](https://developers.google.com/drive)
 [![GACA Certified](https://img.shields.io/badge/GACA-Certified_Pilot-E8B44C)](https://www.gaca.gov.sa)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![License](https://img.shields.io/badge/License-All_Rights_Reserved-red.svg)](LICENSE)
 
 **A bilingual (Arabic / English) portfolio showcasing aerial drone cinematography, video editing, and advertising work.**
 
@@ -152,7 +152,7 @@ Edit **`js/config.js`**:
    | Key | Value | Sensitive |
    |-----|-------|-----------|
    | `DRIVE_API_KEY` | *your Google API key* | ✅ Yes |
-   | `DRIVE_FOLDER` | `1Gv9z8J4lFedzyP2YcRTDwQRGiFiTGZ-b` | No |
+   | `DRIVE_FOLDER` | `1Gv9z8J4lFwQRGiFiTGZ-b` | No |
 
 4. **Redeploy** so the variables load.
 
@@ -172,7 +172,7 @@ Edit **`js/config.js`**:
 
 ## 📜 License
 
-This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
+This project is proprietary. **© 2026 Sulaiman Alghofaili — All Rights Reserved.** No part of the code, design, or media may be used, copied, or reused without prior written permission. See the [LICENSE](LICENSE) file for details.
 
 ---
 
