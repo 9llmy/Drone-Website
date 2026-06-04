@@ -290,8 +290,8 @@
   .contact-actions .btn{ justify-content:center; font-size:1rem; padding:16px; }
   .btn-wa{ background:#25D366; color:#06351c; }
   .btn-wa:hover{ transform:translateY(-2px); box-shadow:0 14px 34px -10px rgba(37,211,102,.6); }
-  .btn-li{ background:#0A66C2; color:#fff; }
-  .btn-li:hover{ transform:translateY(-2px); box-shadow:0 14px 34px -10px rgba(10,102,194,.6); }
+ .btn-ig{ background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888); color:#fff; }
+  .btn-ig:hover{ transform:translateY(-2px); box-shadow:0 14px 34px -10px rgba(220,39,67,.6); }
   .contact-meta{ display:flex; gap:26px; flex-wrap:wrap; margin-top:26px; }
   .contact-meta div span{ display:block; font-size:.74rem; color:var(--muted-2); }
   .contact-meta div b{ font-family:var(--ff-num); font-size:1.05rem; }

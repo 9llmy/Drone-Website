@@ -10,8 +10,8 @@ const WORKS = [
   { type:'drone',  orientation:'v', title:'لقطة غروب جوية',         titleEn:'Aerial Sunset',          drive:'', yt:'', mp4:'' },
 ];
 
-/* PUT YOUR LINKEDIN URL HERE */
-const LINKEDIN = 'https://www.linkedin.com/';  
+/* PUT YOUR INSTAGRAM URL HERE */
+const INSTAGRAM = 'https://www.instagram.com/u99vb';
 
 /* WhatsApp Number */
 const WA = '966569229533';

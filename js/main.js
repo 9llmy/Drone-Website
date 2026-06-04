@@ -144,13 +144,13 @@ function buildMarquee(lang){
   m.innerHTML = set + set + set;
 }
 
-// whatsapp + linkedin links
+// whatsapp + instagram links
 function waLink(msg){ return `https://wa.me/${WA}?text=${encodeURIComponent(msg)}`; }
 const lang0 = 'ar';
 document.getElementById('navCta').href = waLink('السلام عليكم، أرغب بحجز خدمة تصوير جوي 🚁');
 document.getElementById('heroWa').href = waLink('السلام عليكم، أرغب بالاستفسار عن خدمات التصوير الجوي');
 document.getElementById('waMain').href = waLink('السلام عليكم، أرغب بالتواصل بخصوص مشروعي');
-document.getElementById('liMain').href = LINKEDIN;
+document.getElementById('liMain').href = INSTAGRAM;
 document.querySelectorAll('.pkg-cta').forEach(a=>{
   a.href = waLink(`السلام عليكم، أرغب بحجز "${a.dataset.pkg}" 🚁`);
 });
